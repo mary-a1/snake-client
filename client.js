@@ -19,10 +19,15 @@ const connect = function() {
     console.log("We are connected sucessfully");
     //writing data to server upon connection  
     conn.write("Name: M.A");
+    //conn.write("Move:up");
   });
   
+
+  // conn.on("connect", () => {
+  // });
+
+
   return conn;
-  
 };
 console.log("Connecting ...");
 
